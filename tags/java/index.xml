@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java on 老球童的部落阁</title>
+    <link>https://hipai.net/tags/java/</link>
+    <description>Recent content in Java on 老球童的部落阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>转载请注明来源出处!</copyright>
+    <lastBuildDate>Fri, 25 Jan 2019 12:36:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://hipai.net/tags/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Java基础环境</title>
+      <link>https://hipai.net/post/java/</link>
+      <pubDate>Fri, 25 Jan 2019 12:36:46 +0800</pubDate>
+      
+      <guid>https://hipai.net/post/java/</guid>
+      <description> Windows 系统变量 JAVA_HOME C:\Program Files\Java\jdk1.7.0 系统变量 CLASSPATH .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar; 系统变量 Path %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;  Linux  vim /etc/profile bash JAVA_HOME=/usr/local/java PATH=$JAVA_HOME/bin:$PATH CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export JAVA_HOME export PATH export CLASSPATH  source /etc/profile  </description>
+    </item>
+    
+  </channel>
+</rss>

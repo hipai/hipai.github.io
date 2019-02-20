@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
 
   
-  <title>WSL配置</title>
+  <title>Go Module</title>
 
   
   
@@ -24,41 +24,23 @@
 
   
   <meta name="author" content="老球童">
-  <meta name="description" content=" 安装 WSL  从Microsoft Store 下载并安装WSL发行版（例如，Ubuntu) 运行Ubuntu，注意：第一次安装时，系统可能会提示启用Windows可选功能，在这种情况下，需要：
- 以管理员权限运行 powershell 并执行下面的指令
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 重启电脑
-  创建新用户并指定用户名和密码
-  与 Windows 共享配置 通过软链接 Windows 的用户到 WSL，这样就可以共享一些软件的配置信息，比如 git, ssh 等。
-# 删除原有用户目录 sudo rm -rf /home/mi # 链接 Windows 用户目录到 WSL 中 sudo ln -sf /mnt/c/User/&amp;lt;windows user name&amp;gt; /home/mi # 更改访问租信息 sudo chown -R mi:mi /home/mi # 中文支持 sudo dpkg-reconfigure locales  mi 为 WSL 用户名
- ">
+  <meta name="description" content=" 安装 Golang 到最新版并检查 &amp;gt; //低于下面的版本去 golang.google.cn 升级 Golang &amp;gt; go version &amp;gt; go version go1.11 darwin/amd64 设置环境变量开启功能 &amp;gt; //下面是临时开启，写到 bashrc 或者 zshrc 来永久开启 &amp;gt; export GO111MODULE=on 初始化项目 &amp;gt;mkdir myproject1 &amp;amp;&amp;amp; cd myproject1 &amp;gt;go mod init 直接写代码 //main.go package main import ( &amp;quot;log&amp;quot; &amp;quot;github.com/thanhpk/randstr&amp;quot; ) func main() { log.Println(randstr.Hex(16)) }  然后编译运行 go run main.go 后续和扩展  包管理是个比较复杂的问题，有循环依赖等问题 go mod 的原理有很多资料可以看 https://docs.gomods.io/ 是微软开源的项目，解决了 proxy 的问题。  ">
 
   
   
-    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@twitter_username">
-    <meta name="twitter:title" content="WSL配置">
-    <meta name="twitter:description" content=" 安装 WSL  从Microsoft Store 下载并安装WSL发行版（例如，Ubuntu) 运行Ubuntu，注意：第一次安装时，系统可能会提示启用Windows可选功能，在这种情况下，需要：
- 以管理员权限运行 powershell 并执行下面的指令
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 重启电脑
-  创建新用户并指定用户名和密码
-  与 Windows 共享配置 通过软链接 Windows 的用户到 WSL，这样就可以共享一些软件的配置信息，比如 git, ssh 等。
-# 删除原有用户目录 sudo rm -rf /home/mi # 链接 Windows 用户目录到 WSL 中 sudo ln -sf /mnt/c/User/&amp;lt;windows user name&amp;gt; /home/mi # 更改访问租信息 sudo chown -R mi:mi /home/mi # 中文支持 sudo dpkg-reconfigure locales  mi 为 WSL 用户名
- ">
-    <meta name="twitter:image" content="https://hipai.net/images/wsl.png">
+    <meta name="twitter:title" content="Go Module">
+    <meta name="twitter:description" content=" 安装 Golang 到最新版并检查 &amp;gt; //低于下面的版本去 golang.google.cn 升级 Golang &amp;gt; go version &amp;gt; go version go1.11 darwin/amd64 设置环境变量开启功能 &amp;gt; //下面是临时开启，写到 bashrc 或者 zshrc 来永久开启 &amp;gt; export GO111MODULE=on 初始化项目 &amp;gt;mkdir myproject1 &amp;amp;&amp;amp; cd myproject1 &amp;gt;go mod init 直接写代码 //main.go package main import ( &amp;quot;log&amp;quot; &amp;quot;github.com/thanhpk/randstr&amp;quot; ) func main() { log.Println(randstr.Hex(16)) }  然后编译运行 go run main.go 后续和扩展  包管理是个比较复杂的问题，有循环依赖等问题 go mod 的原理有很多资料可以看 https://docs.gomods.io/ 是微软开源的项目，解决了 proxy 的问题。  ">
+    <meta name="twitter:image" content="/images/avatar.png">
   
 
   
   <meta property="og:type" content="article">
-  <meta property="og:title" content="WSL配置">
-  <meta property="og:description" content=" 安装 WSL  从Microsoft Store 下载并安装WSL发行版（例如，Ubuntu) 运行Ubuntu，注意：第一次安装时，系统可能会提示启用Windows可选功能，在这种情况下，需要：
- 以管理员权限运行 powershell 并执行下面的指令
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 重启电脑
-  创建新用户并指定用户名和密码
-  与 Windows 共享配置 通过软链接 Windows 的用户到 WSL，这样就可以共享一些软件的配置信息，比如 git, ssh 等。
-# 删除原有用户目录 sudo rm -rf /home/mi # 链接 Windows 用户目录到 WSL 中 sudo ln -sf /mnt/c/User/&amp;lt;windows user name&amp;gt; /home/mi # 更改访问租信息 sudo chown -R mi:mi /home/mi # 中文支持 sudo dpkg-reconfigure locales  mi 为 WSL 用户名
- ">
-  <meta property="og:url" content="https://hipai.net/post/wsl/">
-  <meta property="og:image" content="https://hipai.net/images/wsl.png">
+  <meta property="og:title" content="Go Module">
+  <meta property="og:description" content=" 安装 Golang 到最新版并检查 &amp;gt; //低于下面的版本去 golang.google.cn 升级 Golang &amp;gt; go version &amp;gt; go version go1.11 darwin/amd64 设置环境变量开启功能 &amp;gt; //下面是临时开启，写到 bashrc 或者 zshrc 来永久开启 &amp;gt; export GO111MODULE=on 初始化项目 &amp;gt;mkdir myproject1 &amp;amp;&amp;amp; cd myproject1 &amp;gt;go mod init 直接写代码 //main.go package main import ( &amp;quot;log&amp;quot; &amp;quot;github.com/thanhpk/randstr&amp;quot; ) func main() { log.Println(randstr.Hex(16)) }  然后编译运行 go run main.go 后续和扩展  包管理是个比较复杂的问题，有循环依赖等问题 go mod 的原理有很多资料可以看 https://docs.gomods.io/ 是微软开源的项目，解决了 proxy 的问题。  ">
+  <meta property="og:url" content="https://hipai.net/post/gomod/">
+  <meta property="og:image" content="/images/avatar.png">
 
 
 
@@ -66,7 +48,7 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 <meta name="generator" content="Hugo 0.54.0">
 
 
-<link rel="canonical" href="https://hipai.net/post/wsl/">
+<link rel="canonical" href="https://hipai.net/post/gomod/">
 
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -215,44 +197,47 @@ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-L
 
   <section class="main post-detail">
     <header class="post-header">
-      <h1 class="post-title">WSL配置</h1>
+      <h1 class="post-title">Go Module</h1>
       <p class="post-meta">@老球童 · Jan 25, 2019 · 1 min read</p>
     </header>
     <article class="post-content">
 
-<h3 id="安装-wsl">安装 WSL</h3>
-
-<ol>
-<li>从<a href="https://www.microsoft.com/zh-cn/p/ubuntu/9nblggh4msv6?rtc=1"> Microsoft Store </a>下载并安装WSL发行版（例如，Ubuntu)</li>
-
-<li><p>运行Ubuntu，注意：第一次安装时，系统可能会提示启用Windows可选功能，在这种情况下，需要：</p>
-
-<ul>
-<li><p>以管理员权限运行 powershell 并执行下面的指令</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</code></pre></div></li>
-
-<li><p>重启电脑</p></li>
-</ul></li>
-
-<li><p>创建新用户并指定用户名和密码</p></li>
-</ol>
-
+<h3 id="安装-golang-到最新版并检查">安装 Golang 到最新版并检查</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; //低于下面的版本去 golang.google.cn 升级 Golang
+&gt; go version
+&gt; go version go1.11 darwin/amd64</code></pre></div>
 <!-- more -->
 
-<h3 id="与-windows-共享配置">与 Windows 共享配置</h3>
+<h3 id="设置环境变量开启功能">设置环境变量开启功能</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; //下面是临时开启，写到 bashrc 或者 zshrc 来永久开启
+&gt; export GO111MODULE<span style="color:#f92672">=</span>on</code></pre></div>
+<h3 id="初始化项目">初始化项目</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt;mkdir myproject1 <span style="color:#f92672">&amp;&amp;</span> cd myproject1
+&gt;go mod init</code></pre></div>
+<h3 id="直接写代码">直接写代码</h3>
 
-<p>通过软链接 Windows 的用户到 WSL，这样就可以共享一些软件的配置信息，比如 git, ssh 等。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#75715e"># 删除原有用户目录</span>
-sudo rm -rf /home/mi
-<span style="color:#75715e"># 链接 Windows 用户目录到 WSL 中</span>
-sudo ln -sf /mnt/c/User/&lt;windows user name&gt; /home/mi
-<span style="color:#75715e"># 更改访问租信息</span>
-sudo chown -R mi:mi /home/mi
-<span style="color:#75715e"># 中文支持</span>
-sudo dpkg-reconfigure locales</code></pre></div>
-<blockquote>
-<p><code>mi</code> 为 WSL 用户名</p>
-</blockquote>
+<pre><code>//main.go
+package main
+
+import (
+    &quot;log&quot;
+    &quot;github.com/thanhpk/randstr&quot;
+)
+
+func main() {
+    log.Println(randstr.Hex(16))
+}
+</code></pre>
+
+<h3 id="然后编译运行">然后编译运行</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">go run main.go</code></pre></div>
+<h3 id="后续和扩展">后续和扩展</h3>
+
+<ul>
+<li>包管理是个比较复杂的问题，有循环依赖等问题</li>
+<li>go mod 的原理有很多资料可以看</li>
+<li><a href="https://docs.gomods.io/">https://docs.gomods.io/</a> 是微软开源的项目，解决了 proxy 的问题。</li>
+</ul>
 </article>
     <footer class="post-footer">
       
@@ -261,6 +246,8 @@ sudo dpkg-reconfigure locales</code></pre></div>
           <li><a href="https://hipai.net/tags/%E9%85%8D%E7%BD%AE"><span class="tag">配置</span></a></li>
         
           <li><a href="https://hipai.net/tags/%E7%8E%AF%E5%A2%83"><span class="tag">环境</span></a></li>
+        
+          <li><a href="https://hipai.net/tags/go"><span class="tag">Go</span></a></li>
         
       </ul>
       

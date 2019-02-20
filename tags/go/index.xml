@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Go on 老球童的部落阁</title>
+    <link>https://hipai.net/tags/go/</link>
+    <description>Recent content in Go on 老球童的部落阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>转载请注明来源出处!</copyright>
+    <lastBuildDate>Fri, 25 Jan 2019 12:36:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://hipai.net/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Go Module</title>
+      <link>https://hipai.net/post/gomod/</link>
+      <pubDate>Fri, 25 Jan 2019 12:36:46 +0800</pubDate>
+      
+      <guid>https://hipai.net/post/gomod/</guid>
+      <description> 安装 Golang 到最新版并检查 &amp;gt; //低于下面的版本去 golang.google.cn 升级 Golang &amp;gt; go version &amp;gt; go version go1.11 darwin/amd64 设置环境变量开启功能 &amp;gt; //下面是临时开启，写到 bashrc 或者 zshrc 来永久开启 &amp;gt; export GO111MODULE=on 初始化项目 &amp;gt;mkdir myproject1 &amp;amp;&amp;amp; cd myproject1 &amp;gt;go mod init 直接写代码 //main.go package main import ( &amp;quot;log&amp;quot; &amp;quot;github.com/thanhpk/randstr&amp;quot; ) func main() { log.Println(randstr.Hex(16)) }  然后编译运行 go run main.go 后续和扩展  包管理是个比较复杂的问题，有循环依赖等问题 go mod 的原理有很多资料可以看 https://docs.gomods.io/ 是微软开源的项目，解决了 proxy 的问题。  </description>
+    </item>
+    
+  </channel>
+</rss>

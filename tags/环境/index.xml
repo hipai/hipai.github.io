@@ -13,6 +13,35 @@
     
     
     <item>
+      <title>Go Module</title>
+      <link>https://hipai.net/post/gomod/</link>
+      <pubDate>Fri, 25 Jan 2019 12:36:46 +0800</pubDate>
+      
+      <guid>https://hipai.net/post/gomod/</guid>
+      <description> 安装 Golang 到最新版并检查 &amp;gt; //低于下面的版本去 golang.google.cn 升级 Golang &amp;gt; go version &amp;gt; go version go1.11 darwin/amd64 设置环境变量开启功能 &amp;gt; //下面是临时开启，写到 bashrc 或者 zshrc 来永久开启 &amp;gt; export GO111MODULE=on 初始化项目 &amp;gt;mkdir myproject1 &amp;amp;&amp;amp; cd myproject1 &amp;gt;go mod init 直接写代码 //main.go package main import ( &amp;quot;log&amp;quot; &amp;quot;github.com/thanhpk/randstr&amp;quot; ) func main() { log.Println(randstr.Hex(16)) }  然后编译运行 go run main.go 后续和扩展  包管理是个比较复杂的问题，有循环依赖等问题 go mod 的原理有很多资料可以看 https://docs.gomods.io/ 是微软开源的项目，解决了 proxy 的问题。  </description>
+    </item>
+    
+    <item>
+      <title>Java基础环境</title>
+      <link>https://hipai.net/post/java/</link>
+      <pubDate>Fri, 25 Jan 2019 12:36:46 +0800</pubDate>
+      
+      <guid>https://hipai.net/post/java/</guid>
+      <description> Windows 系统变量 JAVA_HOME C:\Program Files\Java\jdk1.7.0 系统变量 CLASSPATH .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar; 系统变量 Path %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;  Linux  vim /etc/profile bash JAVA_HOME=/usr/local/java PATH=$JAVA_HOME/bin:$PATH CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export JAVA_HOME export PATH export CLASSPATH  source /etc/profile  </description>
+    </item>
+    
+    <item>
+      <title>Nodejs基础环境</title>
+      <link>https://hipai.net/post/nodejs/</link>
+      <pubDate>Fri, 25 Jan 2019 12:36:46 +0800</pubDate>
+      
+      <guid>https://hipai.net/post/nodejs/</guid>
+      <description> 环境变量 export NODE_HOME=/opt/nodejs export PATH=$NODE_HOME/bin:$PATH NPM国内镜像 npm config list npm config set registry https://registry.npm.taobao.org  配置后可通过下面方式来验证是否成功
+npm config get registry 或
+npm info express  </description>
+    </item>
+    
+    <item>
       <title>WSL配置</title>
       <link>https://hipai.net/post/wsl/</link>
       <pubDate>Fri, 25 Jan 2019 12:36:46 +0800</pubDate>

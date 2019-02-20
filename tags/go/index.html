@@ -6,7 +6,8 @@
 
   
   <title>
-  Posts
+  Tag → go
+  
    | 老球童的部落阁
 </title>
 
@@ -40,7 +41,7 @@
   <meta property="og:type" content="website">
   <meta property="og:title" content="老球童的部落阁">
   
-  <meta property="og:url" content="https://hipai.net/post/">
+  <meta property="og:url" content="https://hipai.net/tags/go/">
   <meta property="og:image" content="/images/avatar.png">
 
 
@@ -49,8 +50,8 @@
 <meta name="generator" content="Hugo 0.54.0">
 
 
-<link rel="canonical" href="https://hipai.net/post/">
-<link rel="alternate" type="application/rss+xml" href="https://hipai.net/post/index.xml" title="老球童的部落阁">
+<link rel="canonical" href="https://hipai.net/tags/go/">
+<link rel="alternate" type="application/rss+xml" href="https://hipai.net/tags/go/index.xml" title="老球童的部落阁">
 
 <meta name="renderer" content="webkit">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -148,13 +149,13 @@
         <li class="menu-item
           
           
-           is-active">
+          ">
           <a href="https://hipai.net/">主页</a>
         </li>
       
         <li class="menu-item
           
-          
+           is-active
           ">
           <a href="https://hipai.net/tags/">标签</a>
         </li>
@@ -197,55 +198,6 @@
     </header>
     
     
-      
-        <article class="post-entry">
-  <header class="post-header">
-    <h3 class="post-title"><a href="https://hipai.net/post/wsl/" class="post-link">WSL配置</a></h3>
-    <p class="post-meta">@老球童 · Jan 25, 2019 · 1 min read</p>
-  </header>
-  
-    <img class="post-cover" src="https://hipai.net/images/wsl.png" alt="WSL配置" lazyload="on">
-  
-  <p class="post-summary"> 安装 WSL  从Microsoft Store 下载并安装WSL发行版（例如，Ubuntu) 运行Ubuntu，注意：第一次安装时，系统可能会提示启用Windows可选功能，在这种情况下，需要：
- 以管理员权限运行 powershell 并执行下面的指令
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 重启电脑
-  创建新用户并指定用户名和密码
-  与 Windows 共享配置 通过软链接 Windows 的用户到 WSL，这样就可以共享一些软件的配置信息，比如 git, ssh 等。
-# 删除原有用户目录 sudo rm -rf /home/mi # 链接 Windows 用户目录到 WSL 中 sudo ln -sf /mnt/c/User/&lt;windows user name&gt; /home/mi # 更改访问租信息 sudo chown -R mi:mi /home/mi # 中文支持 sudo dpkg-reconfigure locales  mi 为 WSL 用户名
- </p>
-  <footer class="post-footer">
-    <a class="read-more" href="https://hipai.net/post/wsl/">Read More →</a>
-  </footer>
-</article>
-
-      
-        <article class="post-entry">
-  <header class="post-header">
-    <h3 class="post-title"><a href="https://hipai.net/post/nodejs/" class="post-link">Nodejs基础环境</a></h3>
-    <p class="post-meta">@老球童 · Jan 25, 2019 · 1 min read</p>
-  </header>
-  
-  <p class="post-summary"> 环境变量 export NODE_HOME=/opt/nodejs export PATH=$NODE_HOME/bin:$PATH NPM国内镜像 npm config list npm config set registry https://registry.npm.taobao.org  配置后可通过下面方式来验证是否成功
-npm config get registry 或
-npm info express  </p>
-  <footer class="post-footer">
-    <a class="read-more" href="https://hipai.net/post/nodejs/">Read More →</a>
-  </footer>
-</article>
-
-      
-        <article class="post-entry">
-  <header class="post-header">
-    <h3 class="post-title"><a href="https://hipai.net/post/java/" class="post-link">Java基础环境</a></h3>
-    <p class="post-meta">@老球童 · Jan 25, 2019 · 1 min read</p>
-  </header>
-  
-  <p class="post-summary"> Windows 系统变量 JAVA_HOME C:\Program Files\Java\jdk1.7.0 系统变量 CLASSPATH .;%JAVA_HOME%\lib\dt.jar;%JAVA_HOME%\lib\tools.jar; 系统变量 Path %JAVA_HOME%\bin;%JAVA_HOME%\jre\bin;  Linux  vim /etc/profile bash JAVA_HOME=/usr/local/java PATH=$JAVA_HOME/bin:$PATH CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar export JAVA_HOME export PATH export CLASSPATH  source /etc/profile  </p>
-  <footer class="post-footer">
-    <a class="read-more" href="https://hipai.net/post/java/">Read More →</a>
-  </footer>
-</article>
-
       
         <article class="post-entry">
   <header class="post-header">
