@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 老球童的部落阁</title>
+    <link>https://hipai.net/post/</link>
+    <description>Recent content in Posts on 老球童的部落阁</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <copyright>转载请注明来源出处!</copyright>
+    <lastBuildDate>Fri, 25 Jan 2019 12:36:46 +0800</lastBuildDate>
+    
+	<atom:link href="https://hipai.net/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>WSL配置</title>
+      <link>https://hipai.net/post/wsl/</link>
+      <pubDate>Fri, 25 Jan 2019 12:36:46 +0800</pubDate>
+      
+      <guid>https://hipai.net/post/wsl/</guid>
+      <description> 安装 WSL  从Microsoft Store 下载并安装WSL发行版（例如，Ubuntu) 运行Ubuntu，注意：第一次安装时，系统可能会提示启用Windows可选功能，在这种情况下，需要：
+ 以管理员权限运行 powershell 并执行下面的指令
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux 重启电脑
+  创建新用户并指定用户名和密码
+  与 Windows 共享配置 通过软链接 Windows 的用户到 WSL，这样就可以共享一些软件的配置信息，比如 git, ssh 等。
+# 删除原有用户目录 sudo rm -rf /home/mi # 链接 Windows 用户目录到 WSL 中 sudo ln -sf /mnt/c/User/&amp;lt;windows user name&amp;gt; /home/mi # 更改访问租信息 sudo chown -R mi:mi /home/mi # 中文支持 sudo dpkg-reconfigure locales  mi 为 WSL 用户名
+ </description>
+    </item>
+    
+  </channel>
+</rss>
